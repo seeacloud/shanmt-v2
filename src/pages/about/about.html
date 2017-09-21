@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=.25, user-scalable=1">
+  <meta name="keywords" content="山木通门店版,厂家版,云管理平台,家具门店软件,建材门店软件, 门店管理软件,厂家管理软件,代理商管理系统,销售管理系统,门店APP,家具ERP,建材ERP,木业加工">
+  <title>山木通 让管理更轻松</title>
+</head>
+<body>
+
+<div id="app">
+  <header-item activemenu="about"></header-item>
+  <banner :info="bannerinfo"></banner>
+
+  <div style="background:#ffffff;">
+    <div class="con">
+      <Row :gutter="30" style="margin-bottom:50px;">
+          <i-col span="5">
+            <side-menu :links="links" style="margin-top:80px;"></side-menu>
+          </i-col>
+
+          <i-col span="19">
+            <div style="margin-top:80px;">
+              <router-view></router-view>
+            </div>
+          </i-col>
+      </Row>
+      <div class="gradient-bdr"> </div>
+
+      <service></service>
+    </div>
+  </div>
+
+
+  <footer-item></footer-item>
+</div>
+
+</body>
+</html>

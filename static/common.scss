@@ -1,0 +1,178 @@
+$font: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+$smtred: #a9263f;
+$blue: #2196f3;
+$lightblue: #64b5f6;
+
+body, h1, h2, h3, h4, h5, h6, p, div, span, a, ul, li, table, th, td, tr {
+  font-family: $font;
+}
+
+#app {
+  min-width: 1180px;
+}
+
+body {
+  background: #eeeeee;
+  min-width: 1180px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: $smtred;
+}
+
+
+.sec {
+  position: relative;
+  background: #ffffff;
+  font-size: 0;
+}
+
+.sec:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 1px;
+  //background: red;
+  background: -webkit-linear-gradient(left, #ffffff, #dddddd, #ffffff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ffffff, #dddddd, #ffffff); /* 标准的语法（必须放在最后） */
+}
+
+
+
+.sec-title {
+  text-align: center;
+  color: $smtred;
+  padding-top: 40px;
+}
+
+.sub-title {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  color: #666666;
+}
+
+.con {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+  min-width: 1180px !important;
+}
+
+.title-con {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  h1 {
+    color: $smtred;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8em;
+  text-indent: 28px;
+  margin: 15px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.smt-btn-fill {
+  display: inline-block;
+  background: $blue;
+  color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.smt-btn-fill:hover {
+  background: $lightblue;
+  color: #ffffff;
+}
+
+.smt-btn-white {
+  display: inline-block;
+  color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.smt-btn-white:hover {
+  background: #ffffff;
+  color: $blue;
+}
+
+.gradient-bdr {
+  position: relative;
+}
+
+.gradient-bdr:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 1px;
+  //background: red;
+  background: -webkit-linear-gradient(left, #ffffff, #dddddd, #ffffff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ffffff, #dddddd, #ffffff); /* 标准的语法（必须放在最后） */
+}
