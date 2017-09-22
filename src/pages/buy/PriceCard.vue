@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div :style="{background:info.bg}" class="base">
-      <h6>{{info.title}}</h6>
+      <h5>{{info.title}}</h5>
       <h1>{{info.price}}</h1>
       <span class="unit">元/年</span>
     </div>

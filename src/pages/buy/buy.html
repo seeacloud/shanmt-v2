@@ -11,19 +11,22 @@
   <header-item activemenu="buy"></header-item>
   <banner :info="bannerinfo"></banner>
   <div style="position: relative;height:400px;">
-    <div class="con" style="position: absolute;top:-50px;margin-left:auto;margin-right:auto;left:0;right:0;">
-      <Row :gutter="20">
-        <i-col span="6">
+    <div class="con" style="position: absolute;top:-50px;margin-left:auto;margin-right:auto;left:0;right:0;width:100%;">
+      <Row :gutter="10">
+        <i-col span="4" offset="2">
           <price-card :info="info1"></price-card>
         </i-col>
-        <i-col span="6">
+        <i-col span="4">
           <price-card :info="info2"></price-card>
         </i-col>
-        <i-col span="6">
+        <i-col span="4">
           <price-card :info="info3"></price-card>
         </i-col>
-        <i-col span="6">
+        <i-col span="4">
           <price-card :info="info4"></price-card>
+        </i-col>
+        <i-col span="4">
+          <price-card :info="info5"></price-card>
         </i-col>
       </Row>
     </div>

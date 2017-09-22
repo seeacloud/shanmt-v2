@@ -164,6 +164,7 @@
       line-height: 40px;
       text-align: left;
       padding-left: 15px;
+      font-size: 14px;
       border-bottom: 1px solid #eeeeee;
     }
     a:hover {

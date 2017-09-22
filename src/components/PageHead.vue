@@ -15,7 +15,7 @@
             <a href="buy.html" class="smt-btn-fill" :class="{btnwhite:info.fontcolor=='white'}">立即购买</a>
           </td>
           <td>
-            <img :src="info.mainimg" alt="" v-if="info.mainimg!=''">
+            <!--<img :src="info.mainimg" alt="" v-if="info.mainimg!=''">-->
           </td>
         </tr>
       </table>
@@ -44,7 +44,7 @@
   }
 
   .title {
-    color: $blue;
+    color: #fff;
   }
 
   .white {

@@ -36,8 +36,9 @@
           subtitle: '门店老板的好帮手，门店管理更轻松',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/store.jpg') + ')' + 'no-repeat center',
-          mainimg: './static/img/maciphonefront.png'
+          bgimg: 'url(' + require('../../../static/img/mac-iphone-building.jpg') + ')' + 'no-repeat center',
+          mainimg: './static/img/maciphonefront.png',
+          fontcolor: 'white'
         },
         secinfo: {
           title: '门店老板的好帮手',
@@ -59,7 +60,7 @@
             {des: '山木通门店版对库存管理进行了升级, 门店可以录入自有产品,实现灵活的库存管理。门店开业自由录入产品,也可以实时查看库存状态'}
           ],
           btn: '',
-          imgurl: './static/img/laptop-order-2.jpg'
+          imgurl: './static/img/laptop-stock.png'
         },
         secinfo3: {
           title: '',
@@ -69,7 +70,7 @@
             {des: '即使线下资金往来, 也可以方便的录入系统, 让您的账目井井有条, 拒绝糊涂账, 财务状况一目了然'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/laptop-money.png'
         },
         secinfo4: {
           title: '',

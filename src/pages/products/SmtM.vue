@@ -68,7 +68,7 @@
             {des: '通过山木通手机APP，随时随地管理企业。可以实现企业的产品管理，库存管理 ，订单管理，资金管理等功能的所有操作。'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/iphone-half/iphone-home.jpg'
         },
         secinfo4: {
           title: '',
