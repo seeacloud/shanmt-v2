@@ -9,7 +9,7 @@
     <sec-right :info="secinfo4"></sec-right>
     <div class="sec">
       <div class="con">
-        <h1 class="sec-title">8大核心功能</h1>
+        <h1 class="sec-title">业务管理 一应俱全</h1>
         <Row :gutter="20">
           <Col v-for="(item,index) in cards" :key="index" span="6">
           <func-card :info="item"></func-card>
@@ -36,7 +36,7 @@
           subtitle: '门店老板的好帮手，门店管理更轻松',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/2iphone-banner.jpg') + ')' + 'no-repeat center',
+          bgimg: 'url(' + require('../../../static/img/2macair.jpg') + ')' + 'no-repeat center',
           mainimg: './static/img/imac.png'
         },
         secinfo: {
@@ -86,15 +86,15 @@
           imgurl: './static/img/iphone-half/iphone-order.jpg'
         },
         cards: [
-          {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '856;'},
-          {title: '订货管理', des: '强大的订单管理中心，全流程的订单跟踪展示，让客户、厂家及时了解订单情况', iconcode: '608;'},
-          {title: '库存管理', des: '通过库存管理功能进行产品的入库、出库、盘点、库存状况查询', iconcode: '613;'},
+          {title: '销售管理', des: '手机开单 零售收银 销售排行榜', iconcode: '856;'},
+          {title: '行业定制', des: '颜色/尺码/款式 批次/保质期 序列号', iconcode: '623;'},
+          {title: '库存管理', des: '库存盘点 仓库调拨 组装拆卸', iconcode: '613;'},
 //          {title: '生产管理', des: '生产全流程监控，让客户及时掌握订单生产状态，做到心中有数', iconcode: '662;'},
-          {title: '资金管理', des: '实时掌握客户资金账户情况，严格控制资金风险，及时督促财务收款', iconcode: '626;'},
-          {title: '报表中心', des: '强大的分析报表功能，实现厂家的订货、生产、资金、库存的全方位分析', iconcode: '7d5;'},
-          {title: '系统设置', des: '门店账户设置，供应商管理，默认地址配置等', iconcode: '721;'},
-          {title: '移动办公', des: '移动化办公(电脑、手机全支持)，老板不在公司也能随时了解公司经营情况', iconcode: '640;'},
-          {title: '微信跟踪', des: '关注山木通微信公众号，就能了解到产品生产状态，通过平台进行产品的真伪验证', iconcode: '65a;'}
+          {title: '资金管理', des: '应收应付 往来对账 核销', iconcode: '626;'},
+          {title: '智能分析', des: '财务报表 库存预警商品分析 即时毛利计算', iconcode: '7d5;'},
+          {title: '采购管理', des: '购货单 以销订购 智能补货', iconcode: '609;'},
+          {title: '移动办公', des: '移动化办公(电脑、手机全支持)，', iconcode: '640;'},
+          {title: '微信跟踪', des: '了解到产品生产状态，通过平台进行产品的真伪验证', iconcode: '65a;'}
         ]
       }
     },

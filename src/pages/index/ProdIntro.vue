@@ -29,6 +29,7 @@
           </h6>
 
           <a :href="item.link" class="smt-btn-fill">{{item.linkname}}</a>
+          <a :href="item.link2" class=" smt-btn-white">{{item.linkname2}}</a>
           <!--<a href="" class="smt-btn-fill">免费试用</a>-->
           </Col>
           <Col span="10" class="col-r">
@@ -66,6 +67,8 @@
             bgimg: 'url(' + require('../../../static/img/smt-m-banner-black.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
+            link2: 'products.html#/smtm',
+            linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
           },
@@ -80,6 +83,8 @@
             bgimg: 'url(' + require('../../../static/img/mac2.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
+            link2: 'products.html#/smtagent',
+            linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
           },
@@ -94,6 +99,8 @@
             bgimg: 'url(' + require('../../../static/img/businesstop.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
+            link2: 'products.html#/order',
+            linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
           },
@@ -108,6 +115,8 @@
             bgimg: 'url(' + require('../../../static/img/jxc-black.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
+            link2: 'products.html#/jxc',
+            linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
           },
@@ -122,6 +131,8 @@
             bgimg: 'url(' + require('../../../static/img/clockin-dark.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
+            link2: 'products.html#/clockin',
+            linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
           }
@@ -225,5 +236,8 @@
 
   h4 {
     color: #000000;
+  }
+  .smt-btn-fill{
+    margin-right: 10px;
   }
 </style>

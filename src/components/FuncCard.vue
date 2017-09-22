@@ -55,7 +55,7 @@
   {
     margin-top: 0;
   }
-  
+
 
 
   .des-wrap
@@ -70,7 +70,7 @@
   {
     text-indent: 0;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
   }
 
 </style>

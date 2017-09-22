@@ -129,11 +129,12 @@ p {
   display: inline-block;
   background: $blue;
   color: #ffffff;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 15px;
-  border-radius: 15px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
   margin: 15px 0;
+  font-size: 16px;
 }
 
 .smt-btn-fill:hover {
@@ -144,17 +145,37 @@ p {
 .smt-btn-white {
   display: inline-block;
   color: #ffffff;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 15px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 20px;
   border: 1px solid #ffffff;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 15px 0;
+  font-size: 16px;
 }
 
 .smt-btn-white:hover {
   background: #ffffff;
   color: $blue;
+}
+
+
+.smt-btn-blue {
+  display: inline-block;
+  background: none;
+  color: $blue;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 20px;
+  border: 1px solid $blue;
+  border-radius: 20px;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.smt-btn-blue:hover {
+  background: $blue;
+  color: #fff;
 }
 
 .gradient-bdr {

@@ -114,7 +114,7 @@
   }
 
   #c-1 {
-    background: url(../../../static/img/c-1.jpg) no-repeat center;
+    background: url(../../../static/img/apple-all.jpg) no-repeat center;
   }
   #c-2 {
     background: url(../../../static/img/c-2.jpg) no-repeat center;

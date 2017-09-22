@@ -9,7 +9,7 @@
     <sec-right :info="secinfo4"></sec-right>
     <div class="sec">
       <div class="con">
-        <h1 class="sec-title">8大核心功能</h1>
+        <h1 class="sec-title">功能强大 得心应手</h1>
         <Row :gutter="20">
           <Col v-for="(item,index) in cards" :key="index" span="6">
           <func-card :info="item"></func-card>
@@ -91,7 +91,7 @@
 //          {title: '生产管理', des: '生产全流程监控，让客户及时掌握订单生产状态，做到心中有数', iconcode: '662;'},
           {title: '资金管理', des: '实时掌握客户资金账户情况，严格控制资金风险，及时督促财务收款', iconcode: '626;'},
           {title: '报表中心', des: '强大的分析报表功能，实现厂家的订货、生产、资金、库存的全方位分析', iconcode: '7d5;'},
-          {title: '系统设置', des: '门店账户设置，供应商管理，默认地址配置等', iconcode: '721;'},
+          {title: '营销', des: '门店账户设置，供应商管理，默认地址配置等', iconcode: '614;'},
           {title: '移动办公', des: '移动化办公(电脑、手机全支持)，老板不在公司也能随时了解公司经营情况', iconcode: '640;'},
           {title: '微信跟踪', des: '关注山木通微信公众号，就能了解到产品生产状态，通过平台进行产品的真伪验证', iconcode: '65a;'}
         ]
