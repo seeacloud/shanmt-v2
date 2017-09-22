@@ -36,9 +36,9 @@
           subtitle: '智能、高效的订货管理系统，全面提升订货效率',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/sky.jpg') + ')' + 'no-repeat center',
+          bgimg: 'url(' + require('../../../static/img/macair-banner.jpg') + ')' + 'no-repeat center',
           mainimg: '',
-          fontcolor: 'white'
+          fontcolor: 'blue'
         },
         secinfo: {
           title: '聪明的订货管理系统',
@@ -70,7 +70,7 @@
             {des: '即使线下资金往来, 也可以方便的录入系统, 让您的账目井井有条, 拒绝糊涂账, 财务状况一目了然'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/laptop-money.png'
         },
         secinfo4: {
           title: '',
@@ -82,7 +82,7 @@
             {des: '山木通云管理平台门店版可以手动录入订单状态, 让您可以方便的更新和记录订单状态,订单状态,您心里有数!'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/iphone-half/iphone-order.jpg'
         },
         cards: [
           {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '856;'},

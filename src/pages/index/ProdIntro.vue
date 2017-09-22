@@ -10,7 +10,7 @@
         &nbsp;
         </Col>
         <Col v-for="(item,index) in icons" :key="index" span="4">
-        <div class="card" id="icon-smt-m" @mouseenter="changeBan(item.name)">
+        <div class="card" id="icon-smt-m" :class="{cardactive:active==item.name}" @mouseenter="changeBan(item.name)">
           <i class="iconfont" v-html="item.iconcode"></i>
           <h5>{{item.title}}</h5>
         </div>
@@ -33,7 +33,7 @@
           </Col>
           <Col span="10" class="col-r">
           <img :src="item.imgurl" alt=""/>
-          <span style="color:#fff;">{{item.imgdes}}</span>
+          <span style="color:#ffffff;">{{item.imgdes}}</span>
           </Col>
         </Row>
       </div>
@@ -160,19 +160,6 @@
     padding: 20px 0;
   }
 
-  .card:after {
-    position: absolute;
-    display: none;
-    content: '';
-    height: 0;
-    width: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
 
   .iconfont {
     display: inline-block;
@@ -187,7 +174,8 @@
     margin-bottom: 20px;
   }
 
-  .card:hover {
+  .cardactive {
+    position: relative;
     background: $smtred;
     color: #ffffff;
     .iconfont {
@@ -196,9 +184,18 @@
     }
   }
 
-  .card:hover:after {
-    display: block;
+  .cardactive:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
     border-top: 10px solid $smtred;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   #smt-m {
@@ -217,17 +214,16 @@
 
   .ban-title {
     margin-bottom: 20px;
-    color: #fff;
+    color: #ffffff;
   }
 
   .ban-spec {
     line-height: 30px;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
   }
 
-  h4
-  {
+  h4 {
     color: #000000;
   }
 </style>

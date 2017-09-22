@@ -24,7 +24,7 @@
           <img :src="logoUrl">
         </a>
         <div class="log-items">
-          <a href="http://shanmt.com/public/trySmt" class="a-btn">免费试用</a>
+          <a href="http://shanmt.com/public/trySmt" target="_blank" class="a-btn">免费试用</a>
           <a href="login.html#/login">登录</a>
           <a href="login.html#/signup">注册</a>
         </div>

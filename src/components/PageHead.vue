@@ -3,8 +3,8 @@
     <div class="con">
       <table>
         <tr>
-          <td>
-            <h2 class="title" :class="{white:info.fontcolor=='white'}">{{info.title}}</h2>
+          <td style="padding-bottom:20px;">
+            <h3 class="title" :class="{white:info.fontcolor=='white'}">{{info.title}}</h3>
             <h5 :class="{white:info.fontcolor=='white'}">
               {{info.subtitle}}
             </h5>
@@ -12,7 +12,7 @@
               <img :src="info.codeurl" alt=""/>
             </div>
             <div :class="{white:info.fontcolor=='white'}">扫码下载山木通APP</div>
-            <a href="buy.html" class="smt-btn-fill" :class="{btnwhite:info.fontcolor=='white'}">立即购买</a>
+            <a href="buy.html" class="smt-btn-fill buy-btn" :class="{btnwhite:info.fontcolor=='white'}">立即购买</a>
           </td>
           <td>
             <!--<img :src="info.mainimg" alt="" v-if="info.mainimg!=''">-->
@@ -44,7 +44,7 @@
   }
 
   .title {
-    color: #fff;
+    color:$blue;
   }
 
   .white {
@@ -91,5 +91,8 @@
       width: 100px;
       height: auto;
     }
+  }
+  .buy-btn{
+    margin-bottom: 20px;
   }
 </style>

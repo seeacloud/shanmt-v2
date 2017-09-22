@@ -36,7 +36,7 @@
           subtitle: '门店老板的好帮手，门店管理更轻松',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/banner-cloud.jpg') + ')' + 'no-repeat center',
+          bgimg: 'url(' + require('../../../static/img/2iphone-banner.jpg') + ')' + 'no-repeat center',
           mainimg: './static/img/imac.png'
         },
         secinfo: {
@@ -71,7 +71,7 @@
             {des: '即使线下资金往来, 也可以方便的录入系统, 让您的账目井井有条, 拒绝糊涂账, 财务状况一目了然'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/iphone-half/iphone-home.jpg'
         },
         secinfo4: {
           title: '',
@@ -83,7 +83,7 @@
             {des: '山木通云管理平台门店版可以手动录入订单状态, 让您可以方便的更新和记录订单状态,订单状态,您心里有数!'}
           ],
           btn: '',
-          imgurl: './static/img/iphone-produce.jpg'
+          imgurl: './static/img/iphone-half/iphone-order.jpg'
         },
         cards: [
           {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '856;'},

@@ -36,7 +36,8 @@
           subtitle: '企业运营与管理完整的互联网解决方案，结合多年行业经验，转为建材家具企业量身打造',
           codeurl: './static/img/app.jpg',
           btn: '立即购买',
-          bgimg: 'url(' + require('../../../static/img/smt-m-banner.jpg') + ')' + 'no-repeat center'
+          bgimg: 'url(' + require('../../../static/img/imac-building.jpg') + ')' + 'no-repeat center',
+          fontcolor: 'white'
         },
         secinfo: {
           title: '为建材家具企业量身定做',
