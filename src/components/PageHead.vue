@@ -8,10 +8,10 @@
             <h5 :class="{white:info.fontcolor=='white'}">
               {{info.subtitle}}
             </h5>
-            <div class="code-img">
+            <div class="code-img" v-if="info.codeurl!=''">
               <img :src="info.codeurl" alt=""/>
             </div>
-            <div :class="{white:info.fontcolor=='white'}">扫码下载山木通APP</div>
+            <div :class="{white:info.fontcolor=='white'}" v-if="info.codeurl!=''">扫码下载山木通APP</div>
             <a href="buy.html" class="smt-btn-fill buy-btn" :class="{btnwhite:info.fontcolor=='white'}">立即购买</a>
           </td>
           <td>

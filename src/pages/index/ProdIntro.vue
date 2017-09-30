@@ -33,8 +33,8 @@
           <!--<a href="" class="smt-btn-fill">免费试用</a>-->
           </Col>
           <Col span="10" class="col-r">
-          <img :src="item.imgurl" alt=""/>
-          <span style="color:#ffffff;">{{item.imgdes}}</span>
+          <img :src="item.imgurl" alt="" v-if="item.imgurl!=''">
+          <span style="color:#ffffff;" v-if="item.imgurl!=''">{{item.imgdes}}</span>
           </Col>
         </Row>
       </div>
@@ -115,7 +115,7 @@
             bgimg: 'url(' + require('../../../static/img/jxc-black.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
-            link2: 'products.html#/jxc',
+            link2: '',
             linkname2: '了解详情',
             imgurl: './static/img/app.jpg',
             imgdes: '扫码下载山木通APP'
@@ -131,9 +131,9 @@
             bgimg: 'url(' + require('../../../static/img/clockin-dark.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
-            link2: 'products.html#/clockin',
+            link2: 'products.html#/attendance',
             linkname2: '了解详情',
-            imgurl: './static/img/app.jpg',
+            imgurl: '',
             imgdes: '扫码下载山木通APP'
           }
         ]
@@ -170,7 +170,6 @@
     text-align: center;
     padding: 20px 0;
   }
-
 
   .iconfont {
     display: inline-block;
@@ -237,7 +236,8 @@
   h4 {
     color: #000000;
   }
-  .smt-btn-fill{
+
+  .smt-btn-fill {
     margin-right: 10px;
   }
 </style>

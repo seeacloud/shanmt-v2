@@ -26,7 +26,7 @@
   {
     border-radius: 5px;
     overflow: hidden;
-    height: 300px;
+    height: 250px;
     width: 80%;
     margin-left: 10%;
     text-align: center;
@@ -38,15 +38,15 @@
     height: 100px;
     line-height: 100px;
     font-size: 50px;
-    border: 2px solid $blue;
+    border: 2px solid $smtred;
     border-radius: 50%;
-    color: $blue;
+    color: $smtred;
   }
   .card:hover
   {
     .iconfont
     {
-      background: $blue;
+      background: $smtred;
       color: #fff;
     }
   }

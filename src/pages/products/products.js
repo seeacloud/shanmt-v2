@@ -7,7 +7,9 @@ import SmtAgent from './SmtAgent.vue'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import Service from '../../components/Service.vue'
+import ServiceAtt from '../../components/ServiceAtt.vue'
 import FooterItem from '../../components/Footer.vue'
+import Attendance from './Attendance.vue'
 import '../../../static/iconfont/iconfont.css'
 
 import SmtOrder from './SmtOrder.vue'
@@ -20,7 +22,8 @@ const routes = [
   {path: '/smtm', component: SmtM},
   {path: '/order', component: SmtOrder},
   {path: '/jxc', component: SmtJxc},
-  {path: '/smtagent', component: SmtAgent}
+  {path: '/smtagent', component: SmtAgent},
+  {path: '/attendance', component: Attendance}
 ]
 
 const router = new Router({
@@ -34,5 +37,5 @@ new Vue({
   data: {
     activeItem: 'products'
   },
-  components: {HeaderItem, SmtAgent, SmtM, Service, FooterItem}
+  components: {HeaderItem, SmtAgent, SmtM, Service, FooterItem, Attendance, ServiceAtt}
 })
