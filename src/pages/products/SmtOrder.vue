@@ -4,10 +4,10 @@
     <page-head :info="headinfo"></page-head>
 
     <sec-left :info="secinfo"></sec-left>
-    <div class="base-sec">
+    <div class="base-sec" style="background:#fff;">
       <div class="con">
-        <h1 class="sec-title">山木通为客户创造6大价值</h1>
-        <img src="../../../static/img/smt-order/airiphone-o.jpg" alt="" style="width:100%;">
+        <h1 class="sec-title">山木通•云订货平台为客户创造六大价值</h1>
+        <img src="../../../static/img/smt-order/airiphone-o.jpg" alt="" style="width:80%;margin-left:10%;">
 
         <Row :gutter="60">
           <Col span="8" v-for="(item, index) in valuelist" :key="index" class="v-col">
@@ -25,7 +25,7 @@
         </Row>
       </div>
     </div>
-    <div class="base-sec">
+    <div class="base-sec" style="background:#fff;">
       <div class="con">
         <h1 class="sec-title">连接供货方和订货方</h1>
         <img src="../../../static/img/smt-order/smt-cloud.jpg" alt="" style="width:100%;">
@@ -35,9 +35,11 @@
     <!--<sec-right :info="secinfo2"></sec-right>-->
     <!--<sec-left :info="secinfo3"></sec-left>-->
     <!--<sec-right :info="secinfo4"></sec-right>-->
-    <div class="sec">
+    <div class="sec" style="background:#fff;">
       <div class="con">
-        <h1 class="sec-title">供货方主要功能</h1>
+        <div class="sec-title-wrap">
+          <h1 class="sec-title">供货方主要功能</h1>
+        </div>
         <Row :gutter="20">
           <Col v-for="(item,index) in cards" :key="index" span="8">
           <func-card :info="item"></func-card>
@@ -45,9 +47,11 @@
         </Row>
       </div>
     </div>
-    <div class="sec">
+    <div class="sec" style="background:#fff;">
       <div class="con">
-        <h1 class="sec-title">订货方主要功能</h1>
+        <div class="sec-title-wrap">
+          <h1 class="sec-title">订货方主要功能</h1>
+        </div>
         <Row :gutter="20">
           <Col v-for="(item,index) in dingcards" :key="index" span="8">
           <func-card :info="item"></func-card>
@@ -55,6 +59,7 @@
         </Row>
       </div>
     </div>
+    <service></service>
   </div>
 </template>
 
@@ -63,6 +68,8 @@
   import SecRight from '../../components/SecRight.vue'
   import PageHead from '../../components/PageHead.vue'
   import FuncCard from '../../components/FuncCard.vue'
+  import Service from '../../components/Service.vue'
+
   export default {
     name: 'smtm',
     data () {
@@ -123,8 +130,9 @@
         ],
         headinfo: {
           title: '山木通 • 云订货平台',
-          subtitle: '适用于食品、零售、餐饮、服装、电器、卫浴、建材家具、电子产品等行业',
+          subtitle: '智能、高效的订货管理系统，全面提升订货效率，可一键完成销售开单,厂家订货,即时生成应收款、应付款、毛利润等经营报表,库存智能管理,云端存储数据，十八般武艺，样样精通',
           codeurl: './static/img/app.jpg',
+          codewx: './static/img/smt-wx.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/smt-order/imac-o-banner.jpg') + ')' + 'no-repeat center',
           mainimg: '',
@@ -133,9 +141,9 @@
         secinfo: {
           title: '',
           subtitle: '',
-          captitle: '聪明的订货管理系统',
+          captitle: '山木通 • 云订货平台',
           captions: [
-            {des: '帮助企业快速构建全渠道营销互动平台，结合云计算技术，帮助企业实现商机管控、订单处理、库存'}
+            {des: '帮助企业快速构建全渠道营销互动平台，结合云计算技术，帮助企业实现商机管控、订单处理、库存管理等业务流程，让管理更轻松'}
           ],
           btn: '',
           imgurl: './static/img/smt-order/2iphone-full.jpg'
@@ -163,7 +171,7 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard},
+    components: {SecLeft, SecRight, PageHead, FuncCard, Service},
     mounted: function () {
       window.scrollTo(0, 0)
     }
@@ -172,10 +180,38 @@
 
 <style lang='scss' scoped>
   @import '../../../static/common';
+  .sec-title-wrap{
+    text-align: center;
+    .sec-title {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      height: 100px;
+      line-height: 100px;
 
-  .sec-title {
-    padding-bottom: 40px;
+    }
+.sec-title:after{
+   position: absolute;
+   content: '';
+   width: 200px;
+   height: 3px;
+   background: $smtred;
+   right: -220px;
+   top: 49px;
+ }
+    .sec-title:before{
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 3px;
+      background: $smtred;
+      left: -220px;
+      top: 49px;
+    }
   }
+
+
 
   .base-sec {
     position: relative;
@@ -197,11 +233,12 @@
     background: linear-gradient(to right, #ffffff, #dddddd, #ffffff); /* 标准的语法（必须放在最后） */
   }
 
-  .col-inner{
+  .col-inner {
     width: 80%;
     margin-left: 20%;
     padding-bottom: 20px;
   }
+
   .v-des {
     font-size: 16px;
     line-height: 24px;
@@ -209,10 +246,15 @@
     height: 48px;
     overflow: hidden;
   }
-.value-title{
-  color: $smtred;
-  margin: 10px 0;
-}
+
+  .value-title {
+    color: $smtred;
+    margin: 10px 0;
+  }
+
+  .sec:after{
+    display: none;
+  }
   .vcard {
     display: inline-block;
     margin-right: 20px;

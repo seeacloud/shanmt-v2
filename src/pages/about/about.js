@@ -33,7 +33,7 @@ new Vue({
   el: '#app',
   router,
   data: {
-    bannerinfo: {title: '关于山木通', imgurl: './static/img/banner-cloud.jpg', txtalign: ''},
+    bannerinfo: {title: '关于山木通', imgurl: './static/img/team.jpg', txtalign: ''},
     links: [
       {title: '山木通简介', url: '/intro', name: 'intro'},
       // {title: '发展历程', url: '/dev', name: 'dev'},

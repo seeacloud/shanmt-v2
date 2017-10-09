@@ -100,6 +100,7 @@
       display: block;
       margin: 5px 0;
       color: #888;
+      font-size: 14px;
     }
     a:hover
     {

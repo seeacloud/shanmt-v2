@@ -21,10 +21,10 @@
     data () {
       return {
         items: [
-          {title: '云订货平台', iconcode: '&#xe600;', link: '', nobdr: false},
+          {title: '云订货平台', iconcode: '&#xe600;', link: 'http://shanmt.com/public/gotoAgentRegister?version=order', nobdr: false},
           {title: '云进销存', iconcode: '&#xe652;', link: '', nobdr: false},
-          {title: '建材家具厂家版', iconcode: '&#xe624;', link: '', nobdr: false},
-          {title: '建材家具门店版', iconcode: '&#xe601;', link: '', nobdr: true}
+          {title: '建材家具厂家版', iconcode: '&#xe624;', link: 'http://shanmt.com/public/gotoAgentRegister?version=mfr', nobdr: false},
+          {title: '建材家具门店版', iconcode: '&#xe601;', link: 'http://shanmt.com/public/gotoAgentRegister?version=agent', nobdr: true}
         ]
       }
     }

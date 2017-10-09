@@ -2,7 +2,7 @@
   <div class="sec">
     <div class="con">
       <div class="title-con">
-        <h1>帮助客户实现业绩增长</h1>
+        <h1>帮助客户实现业绩增长，管理升级</h1>
         <h5>山木通以全新的互联网思维改造传统企业的管理和营销流程，引入购物式体验，帮助客户优化管理流程，提升销售业绩</h5>
       </div>
       <Row :gutter="20">
@@ -26,7 +26,7 @@
     data () {
       return {
         items: [
-          {des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用', name: '汉瑞木业总经理 戴先军', imgurl: './static/img/back.png', typeB: false},
+          {des: '业务流程的效率提高了很多，业绩增长35%，山木通很好用，很实用', name: '汉瑞木业总经理 戴总', imgurl: './static/img/back.png', typeB: false},
           {
             des: '山木通有效的将我们与客户关联企业，通过山木通平 台进行沟通互动，提高了各环节的沟通效率。',
             name: '冠湘木业 王厂长',

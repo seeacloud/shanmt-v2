@@ -17,7 +17,7 @@
         </Row>
       </div>
     </div>
-
+    <service></service>
 
   </div>
 </template>
@@ -27,14 +27,17 @@
   import SecRight from '../../components/SecRight.vue'
   import PageHead from '../../components/PageHead.vue'
   import FuncCard from '../../components/FuncCard.vue'
+  import Service from '../../components/Service.vue'
+
   export default {
     name: 'smtm',
     data () {
       return {
         headinfo: {
           title: '山木通 • 建材家具厂家版',
-          subtitle: '企业运营与管理完整的互联网解决方案，结合多年行业经验，转为建材家具企业量身打造',
+          subtitle: '山木通团队结合多年丰富的行业管理经验，充分考虑企业的特点，为家具、家居、建材、木业加工生产企业量身定制，解决企业核心管理问题，提供最符合家具、家居、建材、木业加工生产企业的全流程解决方案。',
           codeurl: './static/img/app.jpg',
+          codewx: './static/img/smt-wx.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/imac-building.jpg') + ')' + 'no-repeat center',
           fontcolor: 'white'
@@ -96,7 +99,7 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard},
+    components: {SecLeft, SecRight, PageHead, FuncCard, Service},
     mounted: function () {
       window.scrollTo(0, 0)
     }

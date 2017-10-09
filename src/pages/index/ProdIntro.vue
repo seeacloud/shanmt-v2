@@ -2,8 +2,8 @@
   <div style="background:#ffffff;">
     <div class="con">
       <div class="sec-head">
-        <h1 class="sec-title">山木通 让管理更轻松</h1>
-        <h5 class="sub-title">山木通运用国际先进的互联网、云计算、大数据等技术，结合高品质的客户服务，已为多家企业提供了企业运营与管理完整的互联网解决方案。</h5>
+        <h1 class="sec-title">山木通·云平台 让管理更轻松</h1>
+        <h5 class="sub-title">山木通运用国际先进的互联网、云计算、大数据等技术，结合高品质的客户服务，已为众多企业及个体提供了企业或门店运营与管理完整的互联网解决方案。</h5>
       </div>
       <Row style="margin-top:40px;">
         <Col span="2">
@@ -65,6 +65,7 @@
               {des: '● 跨平台，支持移动办公'}
             ],
             bgimg: 'url(' + require('../../../static/img/smt-m-banner-black.jpg') + ')' + 'no-repeat center',
+//            bgimg: 'url(' + require('../../../static/img/businesstop.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',
             linkname: '立即购买',
             link2: 'products.html#/smtm',
@@ -124,9 +125,9 @@
             title: '山木通·云考勤',
             name: 'smt-ykq',
             infoarr: [
-              {des: '● 支持行业拓展，满足不同行业需求'},
-              {des: '● 电脑端、手机端、微信端、APP多端通用，数据实时同步'},
-              {des: '● 一键成本重算，解决多批次产品库存成本不同的问题'}
+              {des: '● 山木通云考勤是建立在云计算基础之上的全新考勤服务平台'},
+              {des: '● 数据智能排班，支持弹性工时'},
+              {des: '● 考勤分组管理，个性化考勤制度设定'}
             ],
             bgimg: 'url(' + require('../../../static/img/clockin-dark.jpg') + ')' + 'no-repeat center',
             link: 'buy.html',

@@ -43,5 +43,8 @@
   h1 {
     text-align: center;
   }
+  p{
+    font-size:16px;
+  }
 
 </style>

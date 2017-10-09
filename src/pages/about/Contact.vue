@@ -66,16 +66,16 @@
   @import url(../../../static/common.scss);
 
   .article-con {
-    background: #eeeeee;
+    background: #fff;
     padding: 0;
-    background: url(../../../static/img/address.jpg) no-repeat;
-    background-size: 100% auto;
+    /*background: url(../../../static/img/address.jpg) no-repeat;*/
+    /*background-size: 100% auto;*/
   }
 
   .inner {
     width: 90%;
     margin-left: 5%;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 60px;
   }
 
@@ -98,13 +98,13 @@
 
   .sec-title {
     text-align: center;
-    color: #ffffff;
+    color: #333;
     margin-bottom: 5px;
   }
 
   .des {
     text-align: center;
-    color: #ffffff;
+    color: #333;
     margin-bottom: 40px;
   }
 </style>

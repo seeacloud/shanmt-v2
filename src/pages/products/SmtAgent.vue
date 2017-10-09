@@ -17,7 +17,7 @@
         </Row>
       </div>
     </div>
-
+    <service></service>
 
   </div>
 </template>
@@ -27,14 +27,16 @@
   import SecRight from '../../components/SecRight.vue'
   import PageHead from '../../components/PageHead.vue'
   import FuncCard from '../../components/FuncCard.vue'
+  import Service from '../../components/Service.vue'
   export default {
     name: 'smtm',
     data () {
       return {
         headinfo: {
           title: '山木通 • 建材家具门店版',
-          subtitle: '门店老板的好帮手，门店管理更轻松',
+          subtitle: '通过山木通门店版一键即可完成销售开单,厂家订货,即时生成应收款、应付款、毛利润等经营报表,库存智能管理,云端存储数据;电脑手机全支持，指尖上办公，让各环节工作从此化繁为简是店铺可靠的智能伙伴。',
           codeurl: './static/img/app.jpg',
+          codewx: './static/img/smt-wx.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/mac-iphone-building.jpg') + ')' + 'no-repeat center',
           mainimg: './static/img/maciphonefront.png',
@@ -97,7 +99,7 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard},
+    components: {SecLeft, SecRight, PageHead, FuncCard, Service},
     mounted: function () {
       window.scrollTo(0, 0)
     }

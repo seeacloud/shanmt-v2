@@ -17,7 +17,7 @@
         </Row>
       </div>
     </div>
-
+    <service></service>
 
   </div>
 </template>
@@ -27,14 +27,17 @@
   import SecRight from '../../components/SecRight.vue'
   import PageHead from '../../components/PageHead.vue'
   import FuncCard from '../../components/FuncCard.vue'
+  import Service from '../../components/Service.vue'
+
   export default {
     name: 'smtm',
     data () {
       return {
         headinfo: {
           title: '山木通 • 云进销存',
-          subtitle: '门店老板的好帮手，门店管理更轻松',
+          subtitle: '支持多种行业，满足各行各业的需求，服装鞋帽，建材家具多属性支持，全面提升管理水平；智能补货，自动报表生成，生意轻松搞定',
           codeurl: './static/img/app.jpg',
+          codewx: './static/img/smt-wx.jpg',
           btn: '立即购买',
           bgimg: 'url(' + require('../../../static/img/2macair.jpg') + ')' + 'no-repeat center',
           mainimg: './static/img/imac.png'
@@ -98,7 +101,7 @@
         ]
       }
     },
-    components: {SecLeft, SecRight, PageHead, FuncCard},
+    components: {SecLeft, SecRight, PageHead, FuncCard, Service},
     mounted: function () {
       window.scrollTo(0, 0)
     }

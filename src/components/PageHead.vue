@@ -5,13 +5,20 @@
         <tr>
           <td style="padding-bottom:20px;">
             <h3 class="title" :class="{white:info.fontcolor=='white'}">{{info.title}}</h3>
-            <h5 :class="{white:info.fontcolor=='white'}">
+            <h5 :class="{white:info.fontcolor=='white'}" class="title-des">
               {{info.subtitle}}
             </h5>
-            <div class="code-img" v-if="info.codeurl!=''">
-              <img :src="info.codeurl" alt=""/>
+
+            <div class="code-img-group">
+              <div class="code-img" v-if="info.codeurl!=''">
+                <img :src="info.codeurl" alt=""/>
+                <div :class="{white:info.fontcolor=='white'}" v-if="info.codeurl!=''">扫码下载山木通APP</div>
+              </div>
+              <div class="code-img" v-if="info.codewx!=''">
+                <img :src="info.codewx" alt=""/>
+                <div :class="{white:info.fontcolor=='white'}" v-if="info.codewx!=''">扫码关注山木通微信公众号</div>
+              </div>
             </div>
-            <div :class="{white:info.fontcolor=='white'}" v-if="info.codeurl!=''">扫码下载山木通APP</div>
             <a href="buy.html" class="smt-btn-fill buy-btn" :class="{btnwhite:info.fontcolor=='white'}">立即购买</a>
           </td>
           <td>
@@ -46,7 +53,9 @@
   .title {
     color:$blue;
   }
-
+.title-des{
+  font-size: 14px;
+}
   .white {
     color: #ffffff;
   }
@@ -86,9 +95,12 @@
   }
 
   .code-img {
-    padding: 15px 0 0 0;
+    padding: 15px 20px 0 0;
+    display: inline-block;
+    text-align: center;
     img {
-      width: 100px;
+      display: inline-block;
+      width: 80px;
       height: auto;
     }
   }

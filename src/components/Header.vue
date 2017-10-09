@@ -3,6 +3,8 @@
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank" style="margin-right:20px;">莫亚科技旗下产品</a>
+        <a href="" class="qq-link"><i class="iconfont">&#xe64a;</i> 售前咨询 </a>
+
         <span class="phone"><i class="iconfont" style="line-height:30px;vertical-align: bottom;margin-right:5px;">&#xe682;</i>咨询电话: 0755-8657 5595</span>
       </div>
     </div>
@@ -21,7 +23,7 @@
 
         </div>
         <a href="index.html" target="_self" id="a-logo">
-          <img :src="logoUrl">
+          <img :src="logoUrl"><p class="slogan">山木通·云平台 让管理更轻松</p>
         </a>
         <div class="log-items">
           <a href="http://shanmt.com/public/trySmt" target="_blank" class="a-btn">免费试用</a>
@@ -55,9 +57,9 @@
             link: 'products.html#/smtm',
             sub: [
               {title: '云订货平台', link: 'products.html#/order'},
-              {title: '云进销存', link: 'products.html#/jxc'},
               {title: '建材家具厂家版', link: 'products.html#/smtm'},
               {title: '建材家具门店版', link: 'products.html#/smtagent'},
+              {title: '云进销存', link: 'products.html#/jxc'},
               {title: '云考勤', link: 'products.html#/attendance'}
             ]
           },
@@ -83,6 +85,22 @@
 
 <style lang='scss' scoped>
   @import "../../static/common";
+.qq-link{
+  color: deepskyblue;
+}
+  .qq-link:hover{
+    color: $smtred;
+  }
+  .slogan{
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    font-size: 12px;
+    margin-top: -12px;
+    color: #666;
+    letter-spacing: 1px;
+    padding-left: 3px;
+  }
 
   .eyebrow {
     text-align: right;
@@ -104,6 +122,7 @@
     color: $smtred;
     font-size: inherit;
     line-height: 30px;
+    margin-left: 20px;
   }
 
   .menu {
@@ -176,7 +195,7 @@
   #a-logo {
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 5px;
   }
 
   .log-items {

@@ -2,7 +2,7 @@
   <div style="background:#fff;padding:30px 0;">
     <div class="con">
       <Row class="sec-title">
-        <h1>做生意，就选山木通·云管理平台</h1>
+        <h1>做生意，搞管理就选山木通·云管理平台</h1>
         <h6>山木通结合多年行业经验，理解中小企业的难点和痛点，专为中小企业进行量身定制开发，提升管理效率，助您业绩腾飞</h6>
         <div style="text-align: center;">
           <a href="buy.html" class="smt-btn-fill">立即购买</a>
