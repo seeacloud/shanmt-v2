@@ -1,0 +1,62 @@
+@import "../../static/common";
+
+.sec {
+  position: relative;
+  background: #ffffff;
+  font-size: 0;
+}
+
+.sec:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 1px;
+  //background: red;
+  background: -webkit-linear-gradient(left, #ffffff, #dddddd, #ffffff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #dddddd, #ffffff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ffffff, #dddddd, #ffffff); /* 标准的语法（必须放在最后） */
+}
+
+
+
+.sec-title {
+  text-align: center;
+  color: $smtred;
+  padding-top: 40px;
+}
+
+.sub-title {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  color: #666666;
+}
+
+td {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.img-sec {
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+}
+
+.caption-wrap {
+  background: green;
+}
+
+.caption-title {
+  color: $blue;
+  margin-bottom: 20px;
+}
+
+.td-caption {
+  padding: 0 30px;
+}

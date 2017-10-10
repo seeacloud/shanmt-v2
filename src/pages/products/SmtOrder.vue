@@ -146,7 +146,7 @@
             {des: '帮助企业快速构建全渠道营销互动平台，结合云计算技术，帮助企业实现商机管控、订单处理、库存管理等业务流程，让管理更轻松'}
           ],
           btn: '',
-          imgurl: './static/img/smt-order/2iphone-full.jpg'
+          imgurl: './static/img/smt-order/2iphone-half.jpg'
         },
         cards: [
           {title: '产品管理', des: '直观的产品展示，电脑、手机的应用，随时随地和客户分享', iconcode: '856;'},

@@ -3,7 +3,7 @@
     <div class="eyebrow">
       <div class="con">
         <a href="http://www.moyasz.com" target="_blank" style="margin-right:20px;">莫亚科技旗下产品</a>
-        <a href="" class="qq-link"><i class="iconfont">&#xe64a;</i> 售前咨询 </a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=712381238&site=qq&menu=yes" target="_blank" class="qq-link"><i class="iconfont">&#xe64a;</i> 售前咨询 </a>
 
         <span class="phone"><i class="iconfont" style="line-height:30px;vertical-align: bottom;margin-right:5px;">&#xe682;</i>咨询电话: 0755-8657 5595</span>
       </div>
